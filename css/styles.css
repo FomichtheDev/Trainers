@@ -170,7 +170,7 @@ header nav ul li a span{
 header nav ul li:last-of-type{
     margin: 0;
 }
-.fa-facebook-f , .fa-instagram , .fa-twitter , .fa-youtube{
+.soc_icon{
     font-size: 20px;
     float: right;
     margin-left: 16px;
@@ -242,4 +242,73 @@ footer button{
     border: 0;
     text-transform: uppercase;
     border-radius: 3px;
+    line-height: 51px;
+    margin-bottom: 50px;
+}
+.about_us{
+    background-color: #252525;
+    padding-bottom: 65px;
+    border-top: solid 1px #464647;
+    border-bottom: solid 1px #464647;
+}
+.f_logo{
+    margin-bottom: 44px;
+}
+.f_icons{
+    display: inline-block;
+    margin-right: 122px;
+}
+.soc_icon2 i{
+    width: 42px;
+    background-color: #ff0000;
+    box-sizing: border-box;
+    line-height: 42px;
+    text-align: center;
+    float: left;
+    margin-right: 23px;
+}
+.soc_icon2.fa-facebook-f{
+    font-size: 37px;
+}
+.soc_icon2 .fa-instagram{
+    font-size: 28px;
+}
+.soc_icon2 .fa-twitter{
+    font-size: 25px;
+}
+.soc_icon2 .fa-youtube{
+    font-size: 30px;
+}
+.soc_icon2 .fa-youtube{
+    margin: 0;
+}
+.f_logo{
+    max-width: 247px;
+}
+.f_logo img{
+    width: 100%;
+}
+.inline{
+    display: inline-block;
+}
+footer ul{
+    list-style: none;
+    display: inline-block;
+    float: bottom;
+    float: right;
+    margin-right: 105px;
+    font-family: Metropolis;
+    font-size: 13px;
+}
+footer ul li{
+    margin-bottom: 23px;
+}
+footer ul li:last-of-type{
+    margin: 0;
+}
+footer ul:first-of-type{
+    margin: 0;
+}
+.wrap_foot{
+    padding-top: 50px;
 }
