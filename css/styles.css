@@ -34,6 +34,7 @@ header{
 .wrapper{
     max-width: 1170px;
     margin: auto;
+    position: relative;
 }
 .logo{
     display: inline-block;
@@ -174,7 +175,15 @@ header nav ul li:last-of-type{
 }
 h1{
     text-align: center;
-    color: Black;
+    color: white;
     font-size: 50px;
-    font-family: "Bebas Neue";
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    padding-bottom: 32px;
+    border-bottom: 3px solid #ff0000;
+}
+.our_t{
+    position: absolute;
+    width: 100%;
+    top: 222px;
 }
