@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+    url('../fonts/Metropolis-Medium.woff') format('woff'),
+    url('../fonts/Metropolis-Medium.ttf') format('truetype'),
+    url('../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.eot');
+    src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('../fonts/BebasNeue-Regular.woff') format('woff'),
+    url('../fonts/BebasNeue-Regular.ttf') format('truetype'),
+    url('../fonts/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+header{
+    background-color: rgba(0,0,0,0.65);
+    padding: 25px 0 10px;
+}
+.wrapper{
+    max-width: 1170px;
+    margin: auto;
+}
+.logo{
+    display: inline-block;
+    max-width: 351px;
+    margin-right: 12px ;
+}
+header .logo img{
+    width: 100%;
+}
+header form{
+    background-color: #ebebeb;
+    width: 208px;
+    height: 42px;
+    display: inline-block;
+    border-radius: 4px;
+    vertical-align: top;
+    margin-top: 9px;
+    float: right;
+}
+header form input{
+    width: 70%;
+    border: none;
+    background: transparent;
+    line-height: 42px;
+    display: inline-block;
+    vertical-align: top;
+    color: #959595;
+    font-size: 15px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-family: 'Metropolis';
+
+}
+header form button{
+    display: inline-block;
+    width: 27%;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    vertical-align: top;
+}
+.red{
+    background-color: #fa090a;
+}
+.grey{
+    background-color: #464646;
+}
+.black{
+    background-color: #252525;
+}
+.btn{
+    min-width: 169px;
+    line-height: 42px;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 24px;
+    float: right;
+    margin-top: 9px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+
+}
+.wrapper:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fa-shopping-cart,.fa-user,.fa-user-plus{
+    margin-right: 12px;
+    color: white;
+    font-size: 18px;
+}
+.border{
+    padding-bottom: 9px;
+    margin-bottom: 21px;
+    border-bottom: solid 2px #464646;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+    margin-right: 21px;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header nav ul li:hover a:after,header nav ul li.active a.after{
+    width: 100%
+}
+header nav ul li a:after{
+    margin-top: 10px;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: #ff0000;
+    transition: width .3s ease-in-out;
+}
+header nav ul li a span{
+    display: block;
+    padding: 0 5px;
+}
+.fab{
+    color: black;
+}
+.soc_icon i{
+    width: 30px;
+    background-color: #ff0000;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: center;
+}
+header nav ul li:last-of-type{
+    margin: 0;
+}
+.fa-facebook-f , .fa-instagram , .fa-twitter , .fa-youtube{
+    font-size: 20px;
+    float: right;
+    margin-left: 16px;
+}
+.fa-facebook-f{
+    margin: 0;
+    font-size: 26px;
+}
