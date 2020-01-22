@@ -191,9 +191,10 @@ header nav ul li:last-of-type{
     left: 11px;
 }
 .bg_img{
-    max-width: 1219px;
     margin: auto;
     margin-bottom: 400px;
+    position: relative;
+    z-index: -1;
 }
 .bg_img img {
      width: 100%;
@@ -210,7 +211,7 @@ h1{
 .our_t{
     position: absolute;
     width: 100%;
-    top: 222px;
+    bottom: -470px;
 }
 footer{
     padding: 75px 0 60px;
@@ -232,7 +233,8 @@ footer form{
 }
 footer input {
     padding: 15px 25px;
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     height: 43px;
     box-sizing: border-box;
     font-family: "Metropolis light";
@@ -296,7 +298,6 @@ footer .fa-facebook-f {
 footer ul{
     list-style: none;
     display: inline-block;
-    float: bottom;
     float: right;
     margin-right: 105px;
     font-family: Metropolis;
@@ -320,6 +321,11 @@ footer ul:first-of-type{
     display: inline-block;
     float: right;
     padding-top: 8px;
+}
+.for_ul:after{
+    clear: both;
+    content: "";
+    display: block;
 }
 .footer_icons{
     display: inline-block;
