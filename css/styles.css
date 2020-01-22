@@ -163,12 +163,17 @@ header nav ul li a span{
 .fab{
     color: black;
 }
-.soc_icon i{
+header a.soc_icon{
     width: 30px;
     background-color: #ff0000;
     box-sizing: border-box;
     line-height: 30px;
+    position: relative;
     text-align: center;
+    height: 30px;
+}
+header a.soc_icon:last-of-type{
+    text-align: inherit;
 }
 header nav ul li:last-of-type{
     margin: 0;
@@ -181,6 +186,9 @@ header nav ul li:last-of-type{
 .fa-facebook-f{
     margin: 0;
     font-size: 26px;
+    position: relative;
+    top: 5px;
+    left: 11px;
 }
 .bg_img{
     max-width: 1219px;
@@ -205,7 +213,7 @@ h1{
     top: 222px;
 }
 footer{
-    padding: 75px 0px 60px;
+    padding: 75px 0 60px;
     background-color: #010006;
 }
 footer span{
@@ -259,33 +267,28 @@ footer button{
 .f_logo{
     margin-bottom: 44px;
 }
-.f_icons{
-    display: inline-block;
-    margin-right: 122px;
-}
-.soc_icon2 i{
+footer a.soc_icon2{
     width: 42px;
     background-color: #ff0000;
     box-sizing: border-box;
+    height: 42px;
     line-height: 42px;
+    position: relative;
     text-align: center;
-    margin-right: 20px;
-    float: left;
 }
-.soc_icon2.fa-facebook-f{
-    font-size: 37px;
-}
-.soc_icon2 .fa-instagram{
-    font-size: 28px;
-}
-.soc_icon2 .fa-twitter{
-    font-size: 25px;
-}
-.soc_icon2 .fa-youtube{
-    font-size: 30px;
-}
-.soc_icon2 .fa-youtube{
+footer a.soc_icon2:first-of-type{
     margin: 0;
+}
+footer .fa-facebook-f {
+    font-size: 36px;
+    position: relative;
+    top: 7px;
+    left: 8px;
+}
+.soc_icon2{
+    margin-left: 25px;
+    float: left;
+    font-size: 30px;
 }
 .inline{
     display: inline-block;
