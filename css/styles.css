@@ -20,7 +20,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Metropolis light';
     src: url('../fonts/Metropolis-Light.eot');
@@ -32,8 +31,6 @@
     font-weight: 300;
     font-style: normal;
 }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -115,17 +112,38 @@ header form button{
     margin-top: 9px;
     font-family: 'Metropolis';
     font-size: 15px;
-
+}
+.btn:after{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-size: 18px;
+}
+.btn.shopping_cart:before{
+    content: "\f07a";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    margin-right: 16px;
+}
+.btn.user:before{
+    content: "\f007";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    margin-right: 14px;
+}
+.btn.user_plus:before{
+    content: "\f234";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    margin-right: 13px;
 }
 .wrapper:after{
     content: "";
     display: block;
     clear: both;
-}
-.fa-shopping-cart,.fa-user,.fa-user-plus{
-    margin-right: 12px;
-    color: white;
-    font-size: 18px;
 }
 .border{
     padding-bottom: 9px;
@@ -340,7 +358,7 @@ footer a.soc_icon2:first-of-type{
     color: black;
     font-size: 36px;
     position: relative;
-    top: 6px;
+    top: 4px;
     left: 17px;
 }
 .soc_icon2:first-of-type{
