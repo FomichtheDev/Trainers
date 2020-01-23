@@ -1,0 +1,92 @@
+@media only screen and (max-width: 767px) {
+    header{
+        position: relative;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .logo{
+        max-width: 200px;
+        margin-top: 20px;
+    }
+    .btn{
+        width: 100px;
+        color: transparent;
+        min-width: 0;
+        margin-left: 10px;
+        height: 50px;
+        overflow: hidden;
+    }
+    header a.btn{
+        font-size: 0;
+    }
+    .btn.shopping_cart:before{
+        margin-right: 0;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: center;
+    }
+    .btn.user_plus:before{
+        margin-right: 0;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: center;
+    }
+    .btn.user:before{
+        margin-right: 0;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: center;
+    }
+    header form{
+        float: none;
+        width: 100%;
+        position: relative;
+    }
+    header nav ul li{
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    header form button {
+        width: 10%;
+        position: absolute;
+        right: 0;
+    }
+    .soc_icon.twitter:before , .soc_icon.youtube:before , .soc_icon.instagram:before , .soc_icon.facebook:before{
+        font-size: 30px;
+    }
+    .soc_icon.facebook:before{
+        font-size: 36px;
+        top: 8px;
+        left: 20px;
+    }
+    header a.soc_icon{
+        width: 50px;
+        line-height: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    footer ul{
+        margin-right: 20px;
+    }
+    .footer_icons{
+        margin: auto;
+        float: none;
+        max-width: 500px;
+        display: block;
+    }
+    .soc_icon2{
+
+    }
+    .footer_logo{
+        text-align: center;
+        max-width: 200px;
+    }
+    .for_ul{
+        padding-top: 100px;
+        float: none;
+        max-width: 600px;
+        display: block;
+        margin: auto;
+    }
+}
