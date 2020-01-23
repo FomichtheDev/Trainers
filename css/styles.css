@@ -44,6 +44,7 @@ header{
     padding: 25px 0 10px;
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
 .wrapper{
     max-width: 1170px;
@@ -143,6 +144,7 @@ header nav ul li{
 a{
     text-decoration: none;
     color: white;
+    position: relative;
 }
 header nav ul li:hover a:after,header nav ul li.active a.after{
     width: 100%
@@ -160,9 +162,6 @@ header nav ul li a span{
     display: block;
     padding: 0 5px;
 }
-.fab{
-    color: black;
-}
 header a.soc_icon{
     width: 30px;
     background-color: #ff0000;
@@ -171,6 +170,40 @@ header a.soc_icon{
     position: relative;
     text-align: center;
     height: 30px;
+}
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.soc_icon.twitter:before{
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 19px;
+}
+.soc_icon.youtube:before{
+    content: "\f167";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 22px;
+}
+.soc_icon.instagram:before{
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 20px;
+}
+.soc_icon.facebook:before{
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 26px;
+    position: relative;
+    top: 4px;
+    left: 12px;
 }
 header a.soc_icon:last-of-type{
     text-align: inherit;
@@ -183,35 +216,32 @@ header nav ul li:last-of-type{
     float: right;
     margin-left: 16px;
 }
-.fa-facebook-f{
-    margin: 0;
-    font-size: 26px;
-    position: relative;
-    top: 5px;
-    left: 11px;
-}
 .bg_img{
-    margin: auto;
-    margin-bottom: 400px;
     position: relative;
-    z-index: -1;
 }
 .bg_img img {
      width: 100%;
+    display: block;
 }
 h1{
     text-align: center;
     color: white;
     font-size: 50px;
+    line-height: 50px;
     font-family: 'Bebas Neue';
-    font-weight: normal;
-    padding-bottom: 32px;
-    border-bottom: 3px solid #ff0000;
-}
-.our_t{
-    position: absolute;
     width: 100%;
-    bottom: -470px;
+    position: absolute;
+    bottom: 21px;
+}
+.bg_img h1:after{
+    content: "";
+    width: 100%;
+    max-width: 1170px;
+    height: 3px;
+    display: block;
+    background-color: #ff0000;
+    margin: auto;
+    margin-top: 34px;
 }
 footer{
     padding: 75px 0 60px;
@@ -281,16 +311,40 @@ footer a.soc_icon2{
 footer a.soc_icon2:first-of-type{
     margin: 0;
 }
-footer .fa-facebook-f {
-    font-size: 36px;
-    position: relative;
-    top: 7px;
-    left: 8px;
-}
 .soc_icon2{
     margin-left: 25px;
     float: left;
     font-size: 30px;
+}
+.soc_icon2.twitter:before{
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 26px;
+}
+.soc_icon2.youtube:before{
+    content: "\f167";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 30px;
+}
+.soc_icon2.instagram:before{
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 28px;
+}
+.soc_icon2.facebook:before{
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands";
+    color: black;
+    font-size: 36px;
+    position: relative;
+    top: 6px;
+    left: 17px;
+}
+.soc_icon2:first-of-type{
+    text-align: inherit;
 }
 .inline{
     display: inline-block;
