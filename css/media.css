@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
     header{
         position: relative;
         padding: 0 15px;
@@ -6,6 +6,87 @@
     }
     .logo{
         max-width: 200px;
+        margin-top: 20px;
+    }
+    header form{
+       margin-top: 20px;
+    }
+    .btn{
+        min-width: 170px;
+        margin-top: 20px;
+        margin-left: 10px;
+        height: 42px;
+        position: relative;
+    }
+    header a.btn{
+        font-size: 16px;
+    }
+    header a.soc_icon{
+        float: left;
+    }
+    .soc_icon.facebook:before{
+        top: 3px;
+        left: 12px;
+    }
+    footer ul{
+        margin-right: 20px;
+    }
+    .footer_icons{
+        margin: auto;
+        float: none;
+        max-width: 500px;
+        display: block;
+    }
+    .footer_logo{
+        text-align: center;
+        max-width: 200px;
+    }
+    .for_ul{
+        padding-top: 100px;
+        float: none;
+        max-width: 600px;
+        display: block;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .btn{
+        min-width: 150px;
+    }
+    header a.btn{
+        font-size: 14px;
+    }
+    header a.soc_icon{
+        float: right;
+    }
+    .soc_icon.facebook:before{
+        top: 2px;
+        left: 12px;
+    }
+    header form{
+        float: none;
+        width: 100%;
+        position: relative;
+    }
+    header nav ul {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+        display: inline-block;
+    }
+    header nav ul li:nth-child(5){
+        line-height: 30px;
+        align-items: center;
+    }
+    header form button {
+        width: 10%;
+        position: absolute;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .logo{
+        max-width: 250px;
         margin-top: 20px;
     }
     .btn{
@@ -42,11 +123,6 @@
         width: 100%;
         position: relative;
     }
-    header nav ul li{
-        display: block;
-        float: none;
-        text-align: center;
-    }
     header form button {
         width: 10%;
         position: absolute;
@@ -75,9 +151,6 @@
         max-width: 500px;
         display: block;
     }
-    .soc_icon2{
-
-    }
     .footer_logo{
         text-align: center;
         max-width: 200px;
@@ -88,5 +161,56 @@
         max-width: 600px;
         display: block;
         margin: auto;
+    }
+}
+@media only screen and (max-width: 413px) {
+    .logo{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    header a.soc_icon.facebook , header a.soc_icon.instagram{
+        float: left;
+    }
+    header a.soc_icon.youtube{
+        margin-right: 55px;
+    }
+    header a.soc_icon.instagram{
+        margin-left: 55px;
+    }
+    .btn{
+        float: none;
+    }
+    footer input{
+     margin-bottom: 20px;
+    }
+    .wrapper{
+        max-width: 360px;
+    }
+    footer ul{
+        text-align: center;
+    }
+    .footer_logo{
+        margin: auto;
+    }
+    footer a.soc_icon2.twitter , .youtube{
+        float: right;
+    }
+    footer a.soc_icon2.twitter{
+        margin-right: 55px;
+    }
+    footer a.soc_icon2.facebook{
+        margin-left: 55px;
+    }
+    footer ul:first-of-type{
+        margin-right: 20px;
+    }
+    footer ul:nth-child(2n){
+        float: right;
+        margin-bottom: 30px;
+    }
+    footer ul:nth-child(2n + 1){
+        float: left;
+        margin-bottom: 30px;
     }
 }
