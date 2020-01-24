@@ -189,6 +189,9 @@ header a.soc_icon{
     text-align: center;
     height: 30px;
 }
+.for_soc_icon{
+    float: right;
+}
 .icon::before {
     display: inline-block;
     font-style: normal;
@@ -220,7 +223,7 @@ header a.soc_icon{
     color: black;
     font-size: 26px;
     position: relative;
-    top: 4px;
+    top: 2px;
     left: 12px;
 }
 header a.soc_icon:last-of-type{
