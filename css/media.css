@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
     header{
         position: relative;
         padding: 0 15px;
@@ -6,147 +6,50 @@
     }
     .logo{
         max-width: 200px;
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+    .btn{
+        max-width: 120px;
+        min-width: 0;
+        margin-left: 10px;
+    }
+    .btn.shopping_cart:before , .btn.user:before , .btn.user_plus:before{
+        margin: 0 10px;
+    }
+    header a.btn{
+        font-size: 0;
     }
     header form{
-       margin-top: 20px;
-    }
-    .btn{
-        min-width: 170px;
-        margin-top: 20px;
-        margin-left: 10px;
-        height: 42px;
-        position: relative;
-    }
-    header a.btn{
-        font-size: 16px;
-    }
-    header a.soc_icon{
-        float: left;
-    }
-    .soc_icon.facebook:before{
-        top: 3px;
-        left: 12px;
-    }
-    footer ul{
-        margin-right: 20px;
-    }
-    .footer_icons{
-        margin: auto;
         float: none;
-        max-width: 500px;
-        display: block;
+        width: 100%;
     }
-    .footer_logo{
+    footer form input{
+        margin: 0;
+    }
+    header nav ul li{
+        display: block;
+        float: none;
         text-align: center;
-        max-width: 200px;
+        margin: 0;
     }
-    .for_ul{
-        padding-top: 100px;
-        float: none;
-        max-width: 600px;
-        display: block;
-        margin: auto;
+    header form button {
+        width: 10%;
+        position: absolute;
+        right: 0;
     }
-}
-@media only screen and (max-width: 991px) {
-    .btn{
-        min-width: 150px;
-    }
-    header a.btn{
-        font-size: 14px;
-    }
-    header a.soc_icon{
-        float: right;
+    .soc_icon{
+        margin-bottom: 20px;
+        float: left;
     }
     .soc_icon.facebook:before{
         top: 2px;
         left: 12px;
     }
-    header form{
-        float: none;
-        width: 100%;
-        position: relative;
-    }
-    header nav ul {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-        display: inline-block;
-    }
-    header nav ul li:nth-child(5){
-        line-height: 30px;
-        align-items: center;
-    }
-    header form button {
-        width: 10%;
-        position: absolute;
-        right: 0;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .logo{
-        max-width: 250px;
-        margin-top: 20px;
-    }
-    .btn{
-        width: 100px;
-        color: transparent;
-        min-width: 0;
-        margin-left: 10px;
-        height: 50px;
-        overflow: hidden;
-    }
-    header a.btn{
-        font-size: 0;
-    }
-    .btn.shopping_cart:before{
-        margin-right: 0;
-        font-size: 20px;
-        text-align: center;
-        vertical-align: center;
-    }
-    .btn.user_plus:before{
-        margin-right: 0;
-        font-size: 20px;
-        text-align: center;
-        vertical-align: center;
-    }
-    .btn.user:before{
-        margin-right: 0;
-        font-size: 20px;
-        text-align: center;
-        vertical-align: center;
-    }
-    header form{
-        float: none;
-        width: 100%;
-        position: relative;
-    }
-    header form button {
-        width: 10%;
-        position: absolute;
-        right: 0;
-    }
-    .soc_icon.twitter:before , .soc_icon.youtube:before , .soc_icon.instagram:before , .soc_icon.facebook:before{
-        font-size: 30px;
-    }
-    .soc_icon.facebook:before{
-        font-size: 36px;
-        top: 8px;
-        left: 20px;
-    }
-    header a.soc_icon{
-        width: 50px;
-        line-height: 50px;
-        height: 50px;
-        margin-bottom: 10px;
-    }
     footer ul{
-        margin-right: 20px;
+        margin-right: 40px;
+        margin-bottom: 30px;
     }
     .footer_icons{
-        margin: auto;
         float: none;
         max-width: 500px;
         display: block;
@@ -161,56 +64,63 @@
         max-width: 600px;
         display: block;
         margin: auto;
+        text-align: center;
+    }
+    footer ul:first-of-type{
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+    footer ul:nth-child(2n){
+        float: left;
+        margin-left: 40px;
     }
 }
 @media only screen and (max-width: 413px) {
-    .logo{
+    .logo {
         display: block;
         width: 100%;
         margin: auto;
     }
-    header a.soc_icon.facebook , header a.soc_icon.instagram{
-        float: left;
-    }
-    header a.soc_icon.youtube{
-        margin-right: 55px;
-    }
-    header a.soc_icon.instagram{
-        margin-left: 55px;
-    }
     .btn{
-        float: none;
+        width: 100px;
+        min-width: 0;
+        margin-left: 10px;
     }
-    footer input{
-     margin-bottom: 20px;
+    h1{
+        font-size: 40px;
     }
-    .wrapper{
-        max-width: 360px;
+    .bg_img h1:after{
+        margin-top: 0;
     }
-    footer ul{
+    .for_ul{
+        display: block;
+        margin: auto;
         text-align: center;
     }
-    .footer_logo{
-        margin: auto;
-    }
-    footer a.soc_icon2.twitter , .youtube{
-        float: right;
-    }
-    footer a.soc_icon2.twitter{
-        margin-right: 55px;
-    }
-    footer a.soc_icon2.facebook{
-        margin-left: 55px;
+    footer ul{
+        margin-right: 10px;
     }
     footer ul:first-of-type{
-        margin-right: 20px;
+        margin-right: 10px;
+        margin-bottom: 30px;
     }
     footer ul:nth-child(2n){
-        float: right;
-        margin-bottom: 30px;
-    }
-    footer ul:nth-child(2n + 1){
         float: left;
-        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 359px) {
+    .btn{
+        width: 80px;
+        line-height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .btn.shopping_cart{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .btn.user_plus{
+        margin-right: 10px;
     }
 }
